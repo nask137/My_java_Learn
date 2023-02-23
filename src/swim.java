@@ -1,4 +1,5 @@
 public interface swim {
-    public abstract void swimming();
 
+
+    String swimming(String a, String b);
 }
