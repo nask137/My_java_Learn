@@ -1,3 +1,5 @@
+package contest3;
+
 public interface swim {
 
 

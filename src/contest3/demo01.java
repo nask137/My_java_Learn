@@ -1,6 +1,8 @@
-import java.util.ArrayList;
+package contest3;
+
+import demo03.Girlfriend;
+
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class demo01 {
    public static void main(String[] args) {
@@ -8,7 +10,7 @@ public class demo01 {
         Girlfriend g1 =new Girlfriend("慧慧",23,1.8);
         Girlfriend g2 =new Girlfriend("美美",18,1.72);
         Girlfriend g3 =new Girlfriend("乐乐",22,1.65);
-        Girlfriend []arr={g1,g2,g3};
+        Girlfriend[]arr={g1,g2,g3};
 
        String s1="aaa";
        String s2="aaaaaaa";

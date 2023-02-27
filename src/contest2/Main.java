@@ -1,22 +1,17 @@
 package contest2;
 
-import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String  a = sc.next();
-        Integer b;
-        StringBuilder sb=new StringBuilder(a);
-        for (int i = 0; i < a.length(); i++) {
-            for (int j = 0; j < i; j++) {
-            Integer in=new Integer(sb.substring(j,j+a.length()-i));
-            if(in%3==0){ System.out.println(i);return ;}
-            }
-        }
-        System.out.println(-1);
-
-
+      myarraylist<Integer> list1=new myarraylist<>();
+      list1.add(229);
+      list1.add(55191);
+      ListUtil.addAll(list1,7537,511,191,91,91);
+      System.out.println(list1);
+      myarraylist2 <Integer> list3=new myarraylist2();
+      list3.add(56199);
+      System.out.println(list3.toString());
 
     }
 }

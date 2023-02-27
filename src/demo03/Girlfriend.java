@@ -1,4 +1,8 @@
-public class Girlfriend {
+package demo03;
+
+import java.util.Objects;
+
+public class Girlfriend implements Comparable<Girlfriend>{
     private  String  name;
     private int age ;
     private double shengao;
@@ -61,6 +65,25 @@ public class Girlfriend {
     }
 
     public String toString() {
-        return "Girlfriend{name = " + name + ", age = " + age + ", shengao = " + shengao + "}";
+        return "demo03.Girlfriend{name = " + name + ", age = " + age + ", shengao = " + shengao + "}";
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Girlfriend that = (Girlfriend) o;
+        return age == that.age && Double.compare(that.shengao, shengao) == 0 && Objects.equals(name, that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, shengao);
+    }
+
+    @Override
+    public int compareTo(Girlfriend o) {
+        return o.getAge()-this.getAge();
     }
 }
