@@ -1,7 +1,15 @@
 package Test;
 
+import java.util.Scanner;
+
 public class Test {
     public static void main(String[] args) {
-        System.out.println("天行健，君子以自强不息");
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        int j = sc.nextInt();
+        System.out.println(j+"\n"+i);
+
+
+
     }
 }

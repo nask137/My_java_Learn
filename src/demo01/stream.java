@@ -33,7 +33,7 @@ public class stream {
                 .filter(s -> Integer.parseInt(s.split(",")[1]) >= 24)
                 .skip(1);
         List<Actor> collect2 = Stream.concat(stream1, stream2)
-                .map((String s) -> new Actor(s.split(",")[0], Integer.parseInt(s.split(",")[1])))
+                .map( s -> new Actor(s.split(",")[0], Integer.parseInt(s.split(",")[1])))
                 .collect(Collectors.toList());
         System.out.println(collect2);
 

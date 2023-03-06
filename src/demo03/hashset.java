@@ -16,7 +16,6 @@ public class hashset {
         s.add(g3);
         for (Girlfriend next : s) {
             System.out.println(next);
-
         }
 
 
