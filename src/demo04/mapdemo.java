@@ -1,16 +1,16 @@
 package demo04;
 
 import java.util.HashMap;
-import java.util.Map;
+
 
 public class mapdemo {
     public static void main(String[] args) {
-        Map<String,String> ms=new HashMap<>();
-ms.put("王楠","135");
-        String 王楠 = ms.get("王楠");
-        System.out.println(王楠);
-
-
-
+        HashMap<Character, Integer> tm = new HashMap<>();
+        tm.put('c',1);
+        tm.put('b',1);
+        tm.put('a',1);
+        tm.put('f',1);
+        tm.put('t',1);
+        System.out.println(tm);
     }
 }
