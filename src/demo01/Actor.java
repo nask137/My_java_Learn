@@ -1,6 +1,9 @@
 package demo01;
 
-public class Actor {
+import java.io.Serializable;
+
+public class Actor implements Serializable {
+    private static final long serialVersionUID = 482157282777296712L;
     private String  name;
     private  int age;
 
