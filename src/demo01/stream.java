@@ -25,7 +25,6 @@ public class stream {
         strings2.add("zhaosilu,24");
         strings2.add("yangmi,25");
         strings2.add("yushuxin,26");
-
         Stream<String> stream2 = strings2.stream()
                 .filter(s -> Integer.parseInt(s.split(",")[1]) >= 24)
                 .skip(1);
