@@ -1,20 +1,19 @@
 package cdu.my.task;
 
-public class Person {
-    private  String name;
-    private byte age;
-    private String sex;
- public static void study(){
-     System.out.println("正在学习");
- }
+import java.util.Collection;
 
-    public Person() {
+public class Cat{
+    private String name ;
+    private int age ;
+    private String color ;
+
+    public Cat() {
     }
 
-    public Person(String name, byte age, String sex) {
+    public Cat(String name, int age, String color) {
         this.name = name;
         this.age = age;
-        this.sex = sex;
+        this.color = color;
     }
 
     /**
@@ -37,7 +36,7 @@ public class Person {
      * 获取
      * @return age
      */
-    public byte getAge() {
+    public int getAge() {
         return age;
     }
 
@@ -45,27 +44,27 @@ public class Person {
      * 设置
      * @param age
      */
-    public void setAge(byte age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
     /**
      * 获取
-     * @return sex
+     * @return color
      */
-    public String getSex() {
-        return sex;
+    public String getColor() {
+        return color;
     }
 
     /**
      * 设置
-     * @param sex
+     * @param color
      */
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String toString() {
-        return "Person{name = " + name + ", age = " + age + ", sex = " + sex + "}";
+        return "Cat{name = " + name + ", age = " + age + ", color = " + color + "}";
     }
 }
