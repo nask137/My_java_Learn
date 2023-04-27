@@ -14,6 +14,7 @@ public class Test {
         System.out.println("请输入猫的名字！！");
         Scanner sc = new Scanner(System.in);
         String name=sc.next();
+        cat1.jumping();
         for (Cat cat : cats) {
             if(cat.getName().equals(name)){ System.out.println(cat.toString());
              flag=false;

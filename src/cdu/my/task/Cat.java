@@ -2,7 +2,7 @@ package cdu.my.task;
 
 import java.util.Collection;
 
-public class Cat{
+public class Cat implements jump{
     private String name ;
     private int age ;
     private String color ;
@@ -66,5 +66,12 @@ public class Cat{
 
     public String toString() {
         return "Cat{name = " + name + ", age = " + age + ", color = " + color + "}";
+    }
+
+
+
+    @Override
+    public void jumping() {
+        System.out.println(this.name+"实现了jump接口中的功能");
     }
 }

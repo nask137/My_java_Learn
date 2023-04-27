@@ -12,7 +12,7 @@ public class Server2 {
         Socket socket = ss.accept();
         String name = UUID.randomUUID().toString().replace("-","");
         BufferedInputStream bis = new BufferedInputStream(socket.getInputStream());
-        BufferedOutputStream bos = new BufferedOutputStream(Files.newOutputStream(Paths.get("Serverdir//"+name+".jpg")));
+        BufferedOutputStream bos = new BufferedOutputStream(Files.newOutputStream(Paths.get("Serverdir//"+name+".mp4")));
         byte[] bytes=new byte[1024];
         int len;
         while((len=bis.read(bytes))!=-1){

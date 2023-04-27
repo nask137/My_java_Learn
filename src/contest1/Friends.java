@@ -1,16 +1,14 @@
-package demo01;
+package contest1;
 
-import java.io.Serializable;
+import java.util.Comparator;
 
-public class Actor implements Serializable {
-    private static final long serialVersionUID = 482157282777296712L;
-    private String  name;
-    private  int age;
+public class Friends implements Comparable<Friends> {
+    private  String name;
+    private  int age ;
 
-    public Actor() {
+    public Friends() {
     }
-
-    public Actor(String name, int age) {
+    public Friends(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -47,4 +45,12 @@ public class Actor implements Serializable {
         this.age = age;
     }
 
+    public String toString() {
+        return "Friends{name = " + name + ", age = " + age + "}";
+    }
+
+    @Override
+    public int compareTo(Friends o) {
+        return this.age-o.age;
+    }
 }
